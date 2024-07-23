@@ -1,0 +1,31 @@
+Documentation
+Responsive To-Do List App Documentation
+Overview
+The To-Do List App is a front-end application built using HTML, CSS, and JavaScript. It allows users to manage their tasks efficiently, with data persistence enabled through local storage.
+
+Features
+Responsive Design:
+
+The app is designed to work seamlessly on devices of all sizes.
+CSS media queries are used to adjust the layout and styling based on the screen size.
+Local Storage:
+
+Tasks are saved in the browser's local storage.
+This ensures that tasks persist even after the browser is closed and reopened.
+Tasks are only removed when the user explicitly deletes them from the app.
+Files and Structure
+index.html: The main HTML file containing the structure of the app.
+styles.css: The CSS file for styling the app.
+script.js: The JavaScript file containing the logic for adding, displaying, and deleting tasks.
+How to Use
+Adding Tasks:
+
+Enter a task in the input field.
+Click the "Add" button or press Enter to add the task to the list.
+Viewing Tasks:
+
+All added tasks are displayed in a list below the input field.
+Each task is accompanied by a "Delete" button.
+Deleting Tasks:
+
+Click the "Delete" button next to a task to remove it from the list and local storage.

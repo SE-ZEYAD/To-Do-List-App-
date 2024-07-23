@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Nunito:wght@200;400;500&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;700;900&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --light-blue: #1a7bd1;
+  --dark-gray: #2c2d3f;
+  --light-gray: #757575;
+  --bg-white: #f6f6f6;
+  --bg-newsletter: #edf2f2ff;
+  --blue-color: #0075ff;
+  --orange-color: #ffa200;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif, "Arial";
+  background-color: var(--dark-gray);
+  color: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-blue);
+}
+
+/* -------------------- */
+
+.container {
+  width: 1500px;
+  margin: 20px auto;
+  position: relative;
+  height: 500px;
+}
+
+.container::before {
+  content: "\f0f6";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  font-size: 35px;
+  top: -21px;
+  left: 2px;
+  color: var(--orange-color);
+  transform: rotate(-18deg);
+}
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  border: 1px solid var(--green-color);
+}
+.input:focus {
+  outline: none;
+}
+.form .clear {
+  background-color: var(--red-color);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form .clear:hover {
+  background-color: #d52418;
+}
+.add {
+  border: none;
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.add:hover {
+  background-color: #31af4a;
+}
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border: 1px solid var(--green-color);
+  width: 49%;
+}
+/* .tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+} */
+@media (max-width: 768px) {
+  .tasks .task {
+    width: 100%;
+  }
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.5;
+  border: 1px solid var(--green-color);
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
