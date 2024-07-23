@@ -1,9 +1,7 @@
 # Responsive To-Do List App
 This is a simple yet powerful To-Do List App built with HTML, CSS, and JavaScript. The app is designed to be fully responsive and utilizes local storage to save your tasks.
 
-## Demo
-You can view the live demo of the To-Do List App by clicking the link below:
-[Demo: To-Do List App](https://se-zeyad.github.io/To-Do-List-App-/)
+## Demo (https://se-zeyad.github.io/To-Do-List-App-/)
 
 # Features
 Responsive Design: The app is optimized for all screen sizes.
